@@ -24,7 +24,7 @@ cloudinary.config({
 })
 
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 8000, () => {
     console.log(`server started on PORT: ${process.env.PORT} in ${process.env.NODE_ENV} mode`)
 })
 // Handle Unhandled Promise rejections
